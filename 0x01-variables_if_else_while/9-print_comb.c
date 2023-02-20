@@ -11,10 +11,13 @@ int main(void)
 	while (i < 5)
 	{
 		putchar(i + '0');
-		i++;
+		if (i == 5)
+			break;
 		putchar(',');
 		putchar(' ');
+		i++;
 	}
-	putchar('5');
+
+	putchar('\n');
 	return (0);
 }
